@@ -1,16 +1,34 @@
-import numpy as np
 import pandas as pd
+import numpy as np
+try:
+    og_laptimes=pd.read_csv('lap_time.csv')
+    if 'LapNumber' not in og_laptimes.columns:
+        print('No Lap Numbers given')
+        exit()
+    if 'LapTime'  not in og_laptimes.columns:
+        print('No Lap Times given')
+        exit()
 
-og_lap_times=pd.read_csv("/Python pactice for motorsport/monaco_2025_dirty_laps.csv")
-print(og_lap_times)
+except FileNotFoundError:
+    print('File not found')
+    exit()
 
 # Data Cleaning
-og_lap_times.columns=og_lap_times.columns.str.strip().str.replace(" ","_")
-og_lap_times['lap_number']=pd.to_numeric(og_lap_times['lap_number'],errors='coerce')
-og_lap_times['lap_time_seconds']=pd.to_numeric(og_lap_times['lap_time_seconds'],errors='coerce')
-og_lap_times['lap_number']=og_lap_times['lap_number'].fillna(og_lap_times.index.to_series()+1)
-'''Code line 11 from chatgpt I could not figure out a way to replace NaN values with the index+! of the values'''
-avg_lap_times=og_lap_times['lap_time_seconds'].mean()
-og_lap_times['lap_time_seconds']=og_lap_times['lap_time_seconds'].fillna(og_lap_times['lap_time_seconds'].interpolate())
-'''Learnt about interpolate function'''
-print(og_lap_times.head(20))
+#Name cleaning
+og_laptimes['Driver']=og_laptimes.groupby('Car')['Driver'].bfill().ffill()
+#Car Cleaning
+og_laptimes['Car']=og_laptimes.groupby('Driver')['Car'].ffill().bfill()
+#LapNumber cleaning
+og_laptimes['LapNumber']=pd.to_numeric(og_laptimes['LapNumber'],errors='coerce')
+og_laptimes['LapNumber']=og_laptimes['LapNumber'].fillna(og_laptimes['LapNumber'].interpolate())
+og_laptimes=og_laptimes[og_laptimes['LapNumber']>0]
+og_laptimes['LapNumber'].drop_duplicates(inplace=True)
+#Laptime cleaning
+og_laptimes['LapTime']=pd.to_numeric(og_laptimes['LapTime'],errors='coerce')
+og_laptimes['LapTime']=og_laptimes.groupby(['Driver','Stint'])['LapTime'].bfill().ffill()
+#Stint number cleaning
+og_laptimes['Stint']=pd.to_numeric(og_laptimes['Stint'],errors='coerce')
+og_laptimes.loc[og_laptimes['Stint']<0,og_laptimes['Stint']]=pd.NA
+og_laptimes['Stint']=og_laptimes.groupby('Driver')['Stint'].ffill().bfill()
+
+
