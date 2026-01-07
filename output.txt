@@ -1,0 +1,42 @@
+					--------Driver Data--------
+Driver Name:Lando Norris
+Driver Data:
+   Driver      Car  LapNumber  Stint  LapTime  Delta_wrt_last_lap  Delta_wrt_best_lap TyreCompound                 Timestamp                          Outlier_flag
+0     NOR  McLaren          1    1.0    96.10                 NaN                1.80       MEDIUM 2026-03-15 14:02:18+00:00                                   NaN
+1     NOR  McLaren          2    1.0    95.45               -0.65                1.15       MEDIUM 2026-03-15 14:03:53+00:00                                   NaN
+2     NOR  McLaren          3    1.0    95.20               -0.25                0.90       MEDIUM 2026-03-15 14:05:28+00:00                                   NaN
+3     NOR  McLaren          4    1.0    95.11               -0.09                0.81       MEDIUM 2026-03-15 14:07:03+00:00                                   NaN
+4     NOR  McLaren          5    1.0    94.95               -0.16                0.65       MEDIUM 2026-03-15 14:08:38+00:00                                   NaN
+5     NOR  McLaren          6    1.0    94.80               -0.15                0.50       MEDIUM 2026-03-15 14:10:13+00:00                                   NaN
+6     NOR  McLaren          7    1.0    94.75               -0.05                0.45       MEDIUM 2026-03-15 14:11:48+00:00                                   NaN
+7     NOR  McLaren          8    1.0    94.70               -0.05                0.40       MEDIUM 2026-03-15 14:13:23+00:00                                   NaN
+8     NOR  McLaren          9    1.0    94.65               -0.05                0.35       MEDIUM 2026-03-15 14:14:57+00:00                                   NaN
+9     NOR  McLaren         10    1.0    94.60               -0.05                0.30       MEDIUM 2026-03-15 14:16:32+00:00                                   NaN
+10    NOR  McLaren         11    1.0    94.55               -0.05                0.25       MEDIUM 2026-03-15 14:18:06+00:00                                   NaN
+11    NOR  McLaren         12    1.0    94.50               -0.05                0.20       MEDIUM 2026-03-15 14:19:41+00:00                                   NaN
+12    NOR  McLaren         13    1.0   119.80               25.30               25.50       MEDIUM 2026-03-15 14:21:41+00:00  Possible Traffic/SC/VSC/Chaotic Race
+13    NOR  McLaren         14    2.0    95.20              -24.60                0.90         HARD 2026-03-15 14:23:16+00:00                                   NaN
+14    NOR  McLaren         15    2.0    94.80               -0.40                0.50         HARD 2026-03-15 14:24:51+00:00                                   NaN
+15    NOR  McLaren         16    2.0    94.60               -0.20                0.30         HARD 2026-03-15 14:26:25+00:00                                   NaN
+16    NOR  McLaren         17    2.0    94.50               -0.10                0.20         HARD 2026-03-15 14:28:00+00:00                                   NaN
+17    NOR  McLaren         18    2.0    94.40               -0.10                0.10         HARD 2026-03-15 14:29:34+00:00                                   NaN
+18    NOR  McLaren         19    2.0    94.35               -0.05                0.05         HARD 2026-03-15 14:31:09+00:00                                   NaN
+19    NOR  McLaren         20    2.0    94.30               -0.05                0.00         HARD 2026-03-15 14:32:43+00:00                                   NaN
+
+-----STATS------
+
+Fastest Lap:94.3 secs
+Slowest Lap:119.8 secs
+Median Lap:94.725 secs
+Average Lap:96.066 secs
+Standard Deviation/Consistency:0.442 secs
+Degradation rate:-0.095sec/lap
+Best delta was gained on lap:13
+Delta was degraded on lap:12
+Outliers Detected:1
+
+
+VERDICT:
+1. Low/Inconsistent
+2. Low Tyre Degradation
+3. Clean Race
