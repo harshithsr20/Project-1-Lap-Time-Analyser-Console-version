@@ -25,12 +25,15 @@ This project focuses on data cleaning, lap analysis, consistency checks, and per
 
 The program takes a CSV file containing lap data with columns such as:
   
-- Driver  
+- Driver(All 19-20 Drivers on the current grid)
 - Car    
-- LapNumber  
-- LapTime  
+- LapNumber(57 Laps in our sample data of the suzuka race)  
+- LapTime 
+- Stint
 - TyreCompound  
 - Timestamp  
+## Sample of the input CSV:
+![img.png](img.png)
 ---
 
 ##  Processing & Calculations
@@ -51,14 +54,22 @@ The program takes a CSV file containing lap data with columns such as:
 - Console output with lap performance summaries
 - Optional `.txt` files containing formatted tables
 - Cleaned and enriched DataFrames for further analysis
+## Sample Output:
+![img_1.png](img_1.png)
+### The conents of the 'output.txt':
+![img_2.png](img_2.png)
+![img_3.png](img_3.png)
 
 ---
 
-##  Technologies Used
-
-- Python 3
+##  Concepts Used
 - Pandas
 - NumPy
+
+## Assumptions:
+-The names of the Drivers are given correctly with their codes
+-Name of the cars are given correctly
+
 
 ---
 
