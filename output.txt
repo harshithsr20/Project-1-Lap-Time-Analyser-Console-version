@@ -1,42 +1,79 @@
 					--------Driver Data--------
-Driver Name:Lando Norris
+Driver Name:Charles Leclerc
 Driver Data:
-   Driver      Car  LapNumber  Stint  LapTime  Delta_wrt_last_lap  Delta_wrt_best_lap TyreCompound                 Timestamp                          Outlier_flag
-0     NOR  McLaren          1    1.0    96.10                 NaN                1.80       MEDIUM 2026-03-15 14:02:18+00:00                                   NaN
-1     NOR  McLaren          2    1.0    95.45               -0.65                1.15       MEDIUM 2026-03-15 14:03:53+00:00                                   NaN
-2     NOR  McLaren          3    1.0    95.20               -0.25                0.90       MEDIUM 2026-03-15 14:05:28+00:00                                   NaN
-3     NOR  McLaren          4    1.0    95.11               -0.09                0.81       MEDIUM 2026-03-15 14:07:03+00:00                                   NaN
-4     NOR  McLaren          5    1.0    94.95               -0.16                0.65       MEDIUM 2026-03-15 14:08:38+00:00                                   NaN
-5     NOR  McLaren          6    1.0    94.80               -0.15                0.50       MEDIUM 2026-03-15 14:10:13+00:00                                   NaN
-6     NOR  McLaren          7    1.0    94.75               -0.05                0.45       MEDIUM 2026-03-15 14:11:48+00:00                                   NaN
-7     NOR  McLaren          8    1.0    94.70               -0.05                0.40       MEDIUM 2026-03-15 14:13:23+00:00                                   NaN
-8     NOR  McLaren          9    1.0    94.65               -0.05                0.35       MEDIUM 2026-03-15 14:14:57+00:00                                   NaN
-9     NOR  McLaren         10    1.0    94.60               -0.05                0.30       MEDIUM 2026-03-15 14:16:32+00:00                                   NaN
-10    NOR  McLaren         11    1.0    94.55               -0.05                0.25       MEDIUM 2026-03-15 14:18:06+00:00                                   NaN
-11    NOR  McLaren         12    1.0    94.50               -0.05                0.20       MEDIUM 2026-03-15 14:19:41+00:00                                   NaN
-12    NOR  McLaren         13    1.0   119.80               25.30               25.50       MEDIUM 2026-03-15 14:21:41+00:00  Possible Traffic/SC/VSC/Chaotic Race
-13    NOR  McLaren         14    2.0    95.20              -24.60                0.90         HARD 2026-03-15 14:23:16+00:00                                   NaN
-14    NOR  McLaren         15    2.0    94.80               -0.40                0.50         HARD 2026-03-15 14:24:51+00:00                                   NaN
-15    NOR  McLaren         16    2.0    94.60               -0.20                0.30         HARD 2026-03-15 14:26:25+00:00                                   NaN
-16    NOR  McLaren         17    2.0    94.50               -0.10                0.20         HARD 2026-03-15 14:28:00+00:00                                   NaN
-17    NOR  McLaren         18    2.0    94.40               -0.10                0.10         HARD 2026-03-15 14:29:34+00:00                                   NaN
-18    NOR  McLaren         19    2.0    94.35               -0.05                0.05         HARD 2026-03-15 14:31:09+00:00                                   NaN
-19    NOR  McLaren         20    2.0    94.30               -0.05                0.00         HARD 2026-03-15 14:32:43+00:00                                   NaN
+   Driver    Car  LapNumber  Stint  LapTime  Delta_wrt_last_lap  Delta_wrt_best_lap TyreCompound           Timestamp                          Outlier_flag
+0     LEC  SF-25          1    1.0   92.234                 NaN               0.143       MEDIUM 2026-04-05 14:01:32                                   NaN
+1     LEC  SF-25          2    1.0   92.422               0.188               0.331       MEDIUM 2026-04-05 14:03:04                                   NaN
+2     LEC  SF-25          3    1.0   92.272              -0.150               0.181       MEDIUM 2026-04-05 14:04:36                                   NaN
+3     LEC  SF-25          4    1.0   92.406               0.134               0.315       MEDIUM 2026-04-05 14:06:09                                   NaN
+4     LEC  SF-25          5    1.0   92.405              -0.001               0.314       MEDIUM 2026-04-05 14:07:42                                   NaN
+5     LEC  SF-25          6    1.0   92.342              -0.063               0.251       MEDIUM 2026-04-05 14:09:14                                   NaN
+6     LEC  SF-25          7    1.0   92.697               0.355               0.606       MEDIUM 2026-04-05 14:10:48                                   NaN
+7     LEC  SF-25          8    1.0   92.536              -0.161               0.445       MEDIUM 2026-04-05 14:12:20                                   NaN
+8     LEC  SF-25          9    1.0   92.237              -0.299               0.146       MEDIUM 2026-04-05 14:13:50                                   NaN
+9     LEC  SF-25         10    1.0   92.522               0.285               0.431       MEDIUM 2026-04-05 14:15:25                                   NaN
+10    LEC  SF-25         11    1.0   92.441              -0.081               0.350       MEDIUM 2026-04-05 14:16:56                                   NaN
+11    LEC  SF-25         12    1.0   92.642               0.201               0.551       MEDIUM 2026-04-05 14:18:31                                   NaN
+12    LEC  SF-25         13    1.0   92.465              -0.177               0.374       MEDIUM 2026-04-05 14:20:02                                   NaN
+13    LEC  SF-25         14    1.0   92.566               0.101               0.475       MEDIUM 2026-04-05 14:21:35                                   NaN
+14    LEC  SF-25         15    1.0   92.661               0.095               0.570       MEDIUM 2026-04-05 14:23:09                                   NaN
+15    LEC  SF-25         16    1.0   92.724               0.063               0.633       MEDIUM 2026-04-05 14:24:43                                   NaN
+16    LEC  SF-25         17    1.0   92.496              -0.228               0.405       MEDIUM 2026-04-05 14:26:12                                   NaN
+17    LEC  SF-25         18    1.0   92.620               0.124               0.529       MEDIUM 2026-04-05 14:27:47                                   NaN
+18    LEC  SF-25         19    1.0   92.623               0.003               0.532       MEDIUM 2026-04-05 14:29:19                                   NaN
+19    LEC  SF-25         20    1.0   92.622              -0.001               0.531       MEDIUM 2026-04-05 14:30:52                                   NaN
+20    LEC  SF-25         21    2.0   92.524              -0.098               0.433         HARD 2026-04-05 14:32:23                                   NaN
+21    LEC  SF-25         22    2.0   92.373              -0.151               0.282         HARD 2026-04-05 14:33:52                                   NaN
+22    LEC  SF-25         23    2.0   92.185              -0.188               0.094         HARD 2026-04-05 14:35:20                                   NaN
+23    LEC  SF-25         24    2.0   92.458               0.273               0.367         HARD 2026-04-05 14:36:58                                   NaN
+24    LEC  SF-25         25    2.0   92.615               0.157               0.524         HARD 2026-04-05 14:38:35                                   NaN
+25    LEC  SF-25         26    2.0   92.496              -0.119               0.405         HARD 2026-04-05 14:40:04                                   NaN
+26    LEC  SF-25         27    2.0   92.202              -0.294               0.111         HARD 2026-04-05 14:41:29                                   NaN
+27    LEC  SF-25         28    2.0   92.338               0.136               0.247         HARD 2026-04-05 14:43:05                                   NaN
+28    LEC  SF-25         29    2.0   92.560               0.222               0.469         HARD 2026-04-05 14:44:44                                   NaN
+29    LEC  SF-25         30    2.0   92.335              -0.225               0.244         HARD 2026-04-05 14:46:10                                   NaN
+30    LEC  SF-25         31    2.0   92.485               0.150               0.394         HARD 2026-04-05 14:47:47                                   NaN
+31    LEC  SF-25         32    2.0   92.537               0.052               0.446         HARD 2026-04-05 14:49:21                                   NaN
+32    LEC  SF-25         33    2.0   92.345              -0.192               0.254         HARD 2026-04-05 14:50:47                                   NaN
+33    LEC  SF-25         34    2.0   92.461               0.116               0.370         HARD 2026-04-05 14:52:23                                   NaN
+34    LEC  SF-25         35    2.0   92.091              -0.370               0.000         HARD 2026-04-05 14:53:43  Possible Traffic/SC/VSC/Chaotic Race
+35    LEC  SF-25         36    2.0   92.369               0.278               0.278         HARD 2026-04-05 14:55:25                                   NaN
+36    LEC  SF-25         37    2.0   92.474               0.105               0.383         HARD 2026-04-05 14:57:01                                   NaN
+37    LEC  SF-25         38    2.0   92.366              -0.108               0.275         HARD 2026-04-05 14:58:29                                   NaN
+38    LEC  SF-25         39    2.0   92.724               0.358               0.633         HARD 2026-04-05 15:00:16                                   NaN
+39    LEC  SF-25         40    2.0   92.368              -0.356               0.277         HARD 2026-04-05 15:01:34                                   NaN
+40    LEC  SF-25         41    3.0   92.282              -0.086               0.191         SOFT 2026-04-05 15:03:03                                   NaN
+41    LEC  SF-25         42    3.0   92.386               0.104               0.295         SOFT 2026-04-05 15:04:40                                   NaN
+42    LEC  SF-25         43    3.0   92.578               0.192               0.487         SOFT 2026-04-05 15:06:20                                   NaN
+43    LEC  SF-25         44    3.0   92.268              -0.310               0.177         SOFT 2026-04-05 15:07:39                                   NaN
+44    LEC  SF-25         45    3.0   92.615               0.347               0.524         SOFT 2026-04-05 15:09:27                                   NaN
+45    LEC  SF-25         46    3.0   92.511              -0.104               0.420         SOFT 2026-04-05 15:10:55                                   NaN
+46    LEC  SF-25         47    3.0   92.427              -0.084               0.336         SOFT 2026-04-05 15:12:24                                   NaN
+47    LEC  SF-25         48    3.0   92.635               0.208               0.544         SOFT 2026-04-05 15:14:06                                   NaN
+48    LEC  SF-25         49    3.0   92.639               0.004               0.548         SOFT 2026-04-05 15:15:39                                   NaN
+49    LEC  SF-25         50    3.0   92.578              -0.061               0.487         SOFT 2026-04-05 15:17:08                                   NaN
+50    LEC  SF-25         51    3.0   92.693               0.115               0.602         SOFT 2026-04-05 15:18:47                                   NaN
+51    LEC  SF-25         52    3.0   92.674              -0.019               0.583         SOFT 2026-04-05 15:20:19                                   NaN
+52    LEC  SF-25         53    3.0   92.769               0.095               0.678         SOFT 2026-04-05 15:21:56                                   NaN
+53    LEC  SF-25         54    3.0   92.869               0.100               0.778         SOFT 2026-04-05 15:23:34                                   NaN
+54    LEC  SF-25         55    3.0   93.015               0.146               0.924         SOFT 2026-04-05 15:25:15  Possible Traffic/SC/VSC/Chaotic Race
+55    LEC  SF-25         56    3.0   92.711              -0.304               0.620         SOFT 2026-04-05 15:26:31                                   NaN
+56    LEC  SF-25         57    3.0   93.151               0.440               1.060         SOFT 2026-04-05 15:28:29  Possible Traffic/SC/VSC/Chaotic Race
 
 -----STATS------
 
-Fastest Lap:94.3 secs
-Slowest Lap:119.8 secs
-Median Lap:94.725 secs
-Average Lap:96.066 secs
-Standard Deviation/Consistency:0.442 secs
-Degradation rate:-0.095sec/lap
-Best delta was gained on lap:13
-Delta was degraded on lap:12
-Outliers Detected:1
+Fastest Lap:92.091 secs
+Slowest Lap:93.151 secs
+Median Lap:92.496 secs
+Average Lap:92.509 secs
+Standard Deviation/Consistency:0.159 secs
+Degradation rate:0.016sec/lap
+Best delta was gained on lap:34
+Delta was degraded on lap:56
+Outliers Detected:3
 
 
 VERDICT:
-1. Low/Inconsistent
+1. High Consistency
 2. Low Tyre Degradation
 3. Clean Race

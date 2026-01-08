@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 try:
-    og_laptimes=pd.read_csv(input('Enter the File path'))
+    og_laptimes=pd.read_csv(input('Enter the File path:'))
     if 'LapNumber' not in og_laptimes.columns:
         print('No Lap Numbers given')
         exit()
@@ -49,7 +49,7 @@ def analyse(name):
     degmaxlap=np.argmax(deltlaps)
 
     #Outlier conditions were set and given by chatgpt as I do not know based on what metrics should I divide outliers from the normal dataset
-    driver_df['Outlier_flag']=driver_df['LapTime'].apply(lambda x:"Possible Traffic/SC/VSC/Chaotic Race" if abs(x-meanlap)>2*stddev else np.nan)
+    driver_df['Outlier_flag']=driver_df['LapTime'].apply(lambda x:"Possible Traffic/SC/VSC/Just a Slow Lap" if abs(x-meanlap)>2*stddev else np.nan)
     stddev=driver_df.drop(driver_df[abs(driver_df['LapTime']-meanlap)>2*stddev].index)['LapTime'].std().round(3)
     verdict1=""
     verdict2=""
@@ -70,7 +70,7 @@ def analyse(name):
     return driver_df,blap,wlap,meanlap,medlap,stddev,deltlaps,deg,gainmaxlap,degmaxlap,verdict1,verdict2,verdict3
 def display(n):
     dtable, flap, slap, mlap, melap, std, delt, deg,gainmax, degmax, v1, v2, v3=analyse(n)
-    drivernames={'VER':'Max Verstappen','HAM':'Lewis Hamilton','NOR':'Lando Norris','LEC':'Charles Leclerc'}
+    drivernames={'VER':'Max Verstappen','HAM':'Lewis Hamilton','NOR':'Lando Norris','LEC':'Charles Leclerc','PIA':'Oscar Piastri','RUS':'George Russel','ANT':'Kimi Antonelli','ALO':'Fernando Alonso','STR':'Lance Stroll','SAI':'Carlos Sainz','ALB':'Alex Albon','HUL':'Nico Hulkenberg','BOR':'Gabreil Bortoleto','GAS':'Piere Gasly','COL':'Franco Colapinto','OCO':'esteban Ocon','BEA':'Oliver Bearman','PER':'Checo Perez','BOT':'Battery Voltas'}
     with open('output.txt',"w") as f:
         f.write('\t\t\t\t\t--------Driver Data--------\n')
         f.write(f'Driver Name:{drivernames[n]}\n')
@@ -100,4 +100,5 @@ def main():
     for i,j in enumerate(driverlist):
         print(f'{i+1}. {j}')
     display(input('Enter the Driver Name(CODE FORM!):'))
+    print('Your Output Has Been Generated in the form of a \'output.txt\' text file')
 main()
