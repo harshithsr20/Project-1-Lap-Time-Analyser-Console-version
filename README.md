@@ -67,8 +67,8 @@ The program takes a CSV file containing lap data with columns such as:
 - NumPy
 
 ## Assumptions:
--The names of the Drivers are given correctly with their codes
--Name of the cars are given correctly
+- The names of the Drivers are given correctly with their codes
+- Name of the cars are given correctly
 
 
 ---
